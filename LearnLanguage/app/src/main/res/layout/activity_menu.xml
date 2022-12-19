@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/page_background2"
+    android:layout_gravity="center"
+    tools:context=".MenuActivity">
+
+    <ImageButton
+        android:id="@+id/btnImageMenuNavigation"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_background"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/navigation" />
+
+    <TextView
+        android:id="@+id/txtViewMenuNavigation"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/engMenuNavigation"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageMenuNavigation"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageMenuNavigation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImageMenuNavigation"
+        app:layout_constraintTop_toTopOf="@+id/btnImageMenuNavigation"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageMenuAirport"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_background"
+        android:scaleType="fitStart"
+        android:contextClickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btnImageMenuHotel"
+        app:layout_constraintStart_toEndOf="@+id/btnImageMenuNavigation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/airport" />
+
+    <TextView
+        android:id="@+id/txtViewMenuAirport"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/engMenuAirport"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageMenuAirport"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageMenuAirport"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImageMenuAirport"
+        app:layout_constraintTop_toTopOf="@+id/btnImageMenuAirport"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageMenuHotel"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/btn_background"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hotel" />
+
+    <TextView
+        android:id="@+id/txtViewMenuHotel"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/engMenuHotel"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageMenuHotel"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageMenuHotel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImageMenuHotel"
+        app:layout_constraintTop_toTopOf="@+id/btnImageMenuHotel"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageMenuMarket"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageMenuNavigation"
+        app:srcCompat="@drawable/market" />
+
+    <TextView
+        android:id="@+id/txtViewMenuMarket"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/engMenuMarket"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageMenuMarket"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageMenuMarket"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImageMenuMarket"
+        app:layout_constraintTop_toTopOf="@+id/btnImageMenuMarket"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageMenuCafe"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_background"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toStartOf="@+id/btnImageMenuMeet"
+        app:layout_constraintStart_toEndOf="@+id/btnImageMenuMarket"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageMenuAirport"
+        app:srcCompat="@drawable/cafe" />
+
+    <TextView
+        android:id="@+id/txtViewMenuCafe"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/engMenuCafe"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageMenuCafe"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageMenuCafe"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImageMenuCafe"
+        app:layout_constraintTop_toTopOf="@+id/btnImageMenuCafe"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageMenuMeet"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/btn_background"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageMenuHotel"
+        app:srcCompat="@drawable/meet" />
+
+    <TextView
+        android:id="@+id/txtViewMenuMeet"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/engMenuMeet"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageMenuMeet"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageMenuMeet"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImageMenuMeet"
+        app:layout_constraintTop_toTopOf="@+id/btnImageMenuMeet"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageMenuFriendship"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageMenuMarket"
+        app:srcCompat="@drawable/friends" />
+
+    <TextView
+        android:id="@+id/txtViewMenuFriendship"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/engMenuFriendship"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageMenuFriendship"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageMenuFriendship"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImageMenuFriendship"
+        app:layout_constraintTop_toTopOf="@+id/btnImageMenuFriendship"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageMenuGreeting"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_background"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toStartOf="@+id/btnImageMenuTechnology"
+        app:layout_constraintStart_toEndOf="@+id/btnImageMenuFriendship"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageMenuCafe"
+        app:srcCompat="@drawable/greeting" />
+
+
+    <TextView
+        android:id="@+id/txtViewMenuGreeting"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/engMenuGreeting"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageMenuGreeting"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageMenuGreeting"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImageMenuGreeting"
+        app:layout_constraintTop_toTopOf="@+id/btnImageMenuGreeting"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageMenuTechnology"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/btn_background"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageMenuMeet"
+        app:srcCompat="@drawable/technology" />
+
+    <TextView
+        android:id="@+id/txtViewMenuTechnology"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/engMenuTechnology"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageMenuTechnology"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageMenuTechnology"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImageMenuTechnology"
+        app:layout_constraintTop_toTopOf="@+id/btnImageMenuTechnology"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageMenuLove"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_background"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toStartOf="@+id/btnImageMenuNumbers"
+        app:layout_constraintStart_toEndOf="@+id/btnImageMenuJobs"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageMenuGreeting"
+        app:srcCompat="@drawable/love" />
+
+    <TextView
+        android:id="@+id/txtViewMenuLove"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/engMenuLove"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageMenuLove"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageMenuLove"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImageMenuLove"
+        app:layout_constraintTop_toTopOf="@+id/btnImageMenuLove"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageMenuJobs"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageMenuFriendship"
+        app:srcCompat="@drawable/jobs" />
+
+    <TextView
+        android:id="@+id/txtViewMenuJobs"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/engMenuJobs"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageMenuJobs"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageMenuJobs"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImageMenuJobs"
+        app:layout_constraintTop_toTopOf="@+id/btnImageMenuJobs"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageMenuNumbers"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_background"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageMenuTechnology"
+        app:srcCompat="@drawable/numbers" />
+
+    <TextView
+        android:id="@+id/txtViewMenuNumbers"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/engMenuNumbers"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageMenuNumbers"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageMenuNumbers"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImageMenuNumbers"
+        app:layout_constraintTop_toTopOf="@+id/btnImageMenuNumbers"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageTurnBack"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_background4"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnImageMenuExit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewMenuJobs"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/btnImageMenuExit"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_background4"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnImageTurnBack"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewMenuLove"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/exit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

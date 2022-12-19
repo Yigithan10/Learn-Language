@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/page_background1"
+    tools:context=".WantToLearn">
+
+    <ImageButton
+        android:id="@+id/btnImageAbd"
+        android:layout_width="100dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_background3"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toStartOf="@+id/btnImageGermany"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewWantToLearn"
+        app:srcCompat="@drawable/abd" />
+
+    <TextView
+        android:id="@+id/txtViewAbd"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/txtYourLanguageAbd"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageAbd"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageAbd"
+        app:layout_constraintStart_toStartOf="@+id/btnImageAbd"
+        app:layout_constraintTop_toTopOf="@+id/btnImageAbd"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageGermany"
+        android:layout_width="100dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_background3"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewWantToLearn"
+        app:layout_constraintStart_toStartOf="@+id/txtViewWantToLearn"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewWantToLearn"
+        app:srcCompat="@drawable/germany" />
+
+    <TextView
+        android:id="@+id/txtViewGermany"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/txtYourLanguageGermany"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageGermany"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageGermany"
+        app:layout_constraintStart_toStartOf="@+id/btnImageGermany"
+        app:layout_constraintTop_toTopOf="@+id/btnImageGermany"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageFrance"
+        android:layout_width="100dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/btn_background3"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnImageGermany"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewWantToLearn"
+        app:srcCompat="@drawable/france" />
+
+    <TextView
+        android:id="@+id/txtViewFrance"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/txtYourLanguageFrance"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageFrance"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageFrance"
+        app:layout_constraintStart_toStartOf="@+id/btnImageFrance"
+        app:layout_constraintTop_toTopOf="@+id/btnImageFrance"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageSpain"
+        android:layout_width="100dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_background3"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageAbd"
+        app:layout_constraintStart_toStartOf="@+id/btnImageAbd"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageAbd"
+        app:srcCompat="@drawable/spain" />
+
+    <TextView
+        android:id="@+id/txtViewSpain"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/txtYourLanguageSpain"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageSpain"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageSpain"
+        app:layout_constraintStart_toStartOf="@+id/btnImageSpain"
+        app:layout_constraintTop_toTopOf="@+id/btnImageSpain"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageRussia"
+        android:layout_width="100dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_background3"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageGermany"
+        app:layout_constraintStart_toStartOf="@+id/btnImageGermany"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageGermany"
+        app:srcCompat="@drawable/russia" />
+
+    <TextView
+        android:id="@+id/txtViewRussia"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/txtYourLanguageRussia"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageRussia"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageRussia"
+        app:layout_constraintStart_toStartOf="@+id/btnImageRussia"
+        app:layout_constraintTop_toTopOf="@+id/btnImageRussia"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageItaly"
+        android:layout_width="100dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/btn_background3"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageFrance"
+        app:layout_constraintStart_toStartOf="@+id/btnImageFrance"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageFrance"
+        app:srcCompat="@drawable/italy" />
+
+    <TextView
+        android:id="@+id/txtViewItaly"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/txtYourLanguageItaly"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageItaly"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageItaly"
+        app:layout_constraintStart_toStartOf="@+id/btnImageItaly"
+        app:layout_constraintTop_toTopOf="@+id/btnImageItaly"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageTurkey"
+        android:layout_width="100dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_background3"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageSpain"
+        app:layout_constraintStart_toStartOf="@+id/btnImageSpain"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageSpain"
+        app:srcCompat="@drawable/turkey" />
+
+    <TextView
+        android:id="@+id/txtViewTurkey"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/txtYourLanguageTurkey"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageTurkey"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageTurkey"
+        app:layout_constraintStart_toStartOf="@+id/btnImageTurkey"
+        app:layout_constraintTop_toTopOf="@+id/btnImageTurkey"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageJapan"
+        android:layout_width="100dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_background3"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageRussia"
+        app:layout_constraintStart_toStartOf="@+id/btnImageRussia"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageRussia"
+        app:srcCompat="@drawable/japan" />
+
+    <TextView
+        android:id="@+id/txtViewJapan"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/txtYourLanguageJapan"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageJapan"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageJapan"
+        app:layout_constraintStart_toStartOf="@+id/btnImageJapan"
+        app:layout_constraintTop_toTopOf="@+id/btnImageJapan"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnImageChina"
+        android:layout_width="100dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/btn_background3"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageItaly"
+        app:layout_constraintStart_toStartOf="@+id/btnImageItaly"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageItaly"
+        app:srcCompat="@drawable/china" />
+
+    <TextView
+        android:id="@+id/txtViewChina"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/txtYourLanguageChina"
+        android:textColor="@color/color5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnImageChina"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageChina"
+        app:layout_constraintStart_toStartOf="@+id/btnImageChina"
+        app:layout_constraintTop_toTopOf="@+id/btnImageChina"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtViewWantToLearn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="175dp"
+        android:gravity="center"
+        android:text="@string/txtWantToLearn"
+        android:textColor="@color/color5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnImageTurnBack"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_background4"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewWantToLearn"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/txtViewExplanation"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="@color/color5"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnImageTurnBack"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageJapan"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
